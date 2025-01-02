@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My resume</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <div class="bg-white">
+      <!-- Navigation bar -->
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav
+          class="flex items-center justify-center p-6 lg:px-8"
+          aria-label="Global"
+        >
+          <!-- Mobile menu button -->
+          <div class="flex lg:hidden">
+            <button
+              data-menu-button
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop navigation -->
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#Competences" class="text-sm/6 font-semibold text-gray-900"
+              >Mes compétences</a
+            >
+            <a href="#Projets" class="text-sm/6 font-semibold text-gray-900"
+              >Mes projets</a
+            >
+            <a
+              href="#Contactezmoi"
+              class="text-sm/6 font-semibold text-gray-900"
+              >Contactez moi</a
+            >
+          </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div
+          data-menu
+          class="hidden fixed inset-0 z-50 bg-white px-6 py-6 lg:hidden"
+          aria-hidden="true"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                alt="Your Company"
+              />
+            </a>
+            <button
+              data-menu-button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <nav class="mt-6 space-y-2">
+            <a
+              href="#"
+              class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+              >Mon parcours</a
+            >
+            <a
+              href="#"
+              class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+              >Mes projets</a
+            >
+            <a
+              href="#"
+              class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+              >A propos de moi</a
+            >
+            <a
+              href="#"
+              class="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
+              >Contactez moi</a
+            >
+          </nav>
+        </div>
+      </header>
+      <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        >
+          <!-- BG subtile -->
+          <div
+            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+        <!-- Introduction -->
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div class="text-center">
+            <h1
+              class="text-5xl font-semibold tracking-tight text-teal-600 sm:text-7xl"
+            >
+              Je suis Teddy
+            </h1>
+            <h2
+              class="mt-8 text-balance text-3xl font-semibold tracking-tight text-teal-900 sm:text-xl"
+            >
+              Un Développeur FullStack WEB
+            </h2>
+            <p
+              class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8"
+            >
+              Dévéloppeur Junior expert en creation d'interface utilisateur
+              ergonomique et responsive utilisant React pour une meilleur
+              expérience utilisateur.Passionné de design et d'interface
+              minimalisme, pour mieux guider l'utilisateur.
+            </p>
+          </div>
+        </div>
+        <!-- Compétences -->
+        <div id="Competences" class="bg-white py-04 sm:py-2">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:text-center">
+              <p
+                class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-3xl lg:text-balance"
+              >
+                Mes compétences
+              </p>
+            </div>
+            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+              <dl
+                class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+              >
+                <div class="relative pl-16">
+                  <dt class="text-2xl font-semibold text-gray-900">
+                    <div
+                      class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600"
+                    >
+                      <svg
+                        class="size-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z"
+                        />
+                      </svg>
+                    </div>
+                    Deployer un site web
+                  </dt>
+                  <dd class="mt-2 text-base/7 text-gray-600">
+                    <ul
+                      role="list"
+                      class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10"
+                    >
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Services de cloud : Savoir utiliser des services de
+                        déploiement cloud comme Heroku, Netlify, Vercel, AWS,
+                        Google Cloud, ou DigitalOcean.
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Configuration de serveurs : Pour un déploiement sur un
+                        serveur, comprendre l’utilisation de serveurs Nginx ou
+                        Apache pour héberger l'application et la configuration
+                        des environnements de production.
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Déploiement continu (CI/CD) : Configurer des pipelines
+                        de déploiement avec des outils comme GitHub Actions,
+                        GitLab CI, ou CircleCI.
+                      </li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="relative pl-16">
+                  <dt class="text-2xl font-semibold text-gray-900">
+                    <div
+                      class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"
+                        />
+                      </svg>
+                    </div>
+                    Developper une application web
+                  </dt>
+                  <dd class="mt-2 text-base/7 text-gray-600">
+                    <ul
+                      role="list"
+                      class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10"
+                    >
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        HTML/CSS : Connaître la structure des pages web (HTML)
+                        et le style (CSS). Utilisation des Flexbox, Grid,
+                        animations et transitions.
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Frameworks JavaScript : Utiliser des frameworks comme
+                        React, Vue.js, Angular, etc., pour le front-end.
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Préprocesseurs CSS : Utiliser Sass ou Less pour un CSS
+                        plus modulaire et facile à maintenir.
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Backend : Connaître un langage backend (ex : Node.js,
+                        PHP, Python/Django, Ruby on Rails) et savoir interagir
+                        avec une base de données.
+                      </li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="relative pl-16">
+                  <dt class="text-2xl font-semibold text-gray-900">
+                    <div
+                      class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+                        />
+                      </svg>
+                    </div>
+                    Versioning et Collaboration :
+                  </dt>
+                  <dd class="mt-2 text-base/7 text-gray-600">
+                    <ul
+                      role="list"
+                      class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10"
+                    >
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Git : Utilisation de Git et GitHub pour la gestion des
+                        versions, travailler en équipe, et gérer les branches.
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Gestion de projet : Utiliser des outils de gestion de
+                        projet (comme Trello, Asana, Jira) pour organiser les
+                        tâches et le travail d'équipe.
+                      </li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="relative pl-16">
+                  <dt class="text-2xl font-semibold text-gray-900">
+                    <div
+                      class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="size-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                        />
+                      </svg>
+                    </div>
+                    Sauvegarde et sécurité
+                  </dt>
+                  <dd class="mt-2 text-base/7 text-gray-600">
+                    <ul
+                      role="list"
+                      class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10"
+                    >
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Backup régulier : Assurer des sauvegardes régulières des
+                        données et du code.
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Sécurisation des accès : Limiter les accès au serveur
+                        (utilisation de clés SSH pour l’accès sécurisé).
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Logs et suivi : Mettre en place des outils pour suivre
+                        les logs de l’application et la gestion des erreurs (ex.
+                        Sentry, LogRocket).
+                      </li>
+                      <li class="flex gap-x-3">
+                        <svg
+                          class="h-6 w-5 flex-none text-indigo-600"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          data-slot="icon"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        Monitoring de performance : Utiliser des outils de suivi
+                        des performances comme Google Analytics, New Relic,
+                        Datadog.
+                      </li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <!--  Projets-->
+        <div
+          id="Projets"
+          class="relative isolate bg-white px-6 pt-24 sm:pt-40 lg:px-8"
+        >
+          <div class="mx-auto max-w-4xl text-center">
+            <p
+              class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl"
+            >
+              Mes projets personnels
+            </p>
+          </div>
+          <div
+            class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2"
+          >
+            <div
+              class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none"
+            >
+              <h3
+                id="tier-hobby"
+                class="text-2xl font-semibold text-indigo-600"
+              >
+                My first site
+              </h3>
+              <img
+                class="size-100 flex items-baseline gap-x-2"
+                src="./assets/images/projets/04.PNG"
+              />
+              <p class="mt-6 text-base/7 text-gray-600">HTML5</p>
+              <a
+                href="https://teddymij.github.io/html-portfolio/"
+                target="_blank"
+                aria-describedby="tier-hobby"
+                class="mt-0 block rounded-md px-3.5 p-4 text-center text-base font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-5"
+                >Aller vers le site</a
+              >
+            </div>
+            <div
+              class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none"
+            >
+              <h3
+                id="tier-hobby"
+                class="text-2xl font-semibold text-indigo-600"
+              >
+                ROBBY LENS
+              </h3>
+              <img
+                class="size-100 flex items-baseline gap-x-2"
+                src="./assets/images/projets/03.PNG"
+              />
+              <p class="mt-6 text-base/7 text-gray-600">HTML5 + CSS3</p>
+              <a
+                href="https://teddymij.github.io/robbylens/"
+                target="_blank"
+                aria-describedby="tier-hobby"
+                class="mt-0 block rounded-md px-3.5 p-4 text-center text-base font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-5"
+                >Aller vers le site</a
+              >
+            </div>
+            <div
+              class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none"
+            >
+              <h3
+                id="tier-hobby"
+                class="text-2xl font-semibold text-indigo-600"
+              >
+                AZERTYPE
+              </h3>
+              <img
+                class="size-100 flex items-baseline gap-x-2"
+                src="./assets/images/projets/02.PNG"
+              />
+              <p class="mt-6 text-base/7 text-gray-600">
+                HTML5 + CSS3+ Vanilla JS
+              </p>
+              <a
+                href="https://teddymij.github.io/azertype/"
+                target="_blank"
+                aria-describedby="tier-hobby"
+                class="mt-0 block rounded-md px-3.5 p-4 text-center text-base font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-5"
+                >Aller vers le site</a
+              >
+            </div>
+            <div
+              class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none"
+            >
+              <h3
+                id="tier-hobby"
+                class="text-2xl font-semibold text-indigo-600"
+              >
+                Yummy nouille
+              </h3>
+              <img
+                class="size-100 flex items-baseline gap-x-2"
+                src="./assets/images/projets/01.PNG"
+              />
+              <p class="mt-6 text-base/7 text-gray-600">
+                HTML5 + SASS + BOOTSTRAP
+              </p>
+              <a
+                href="https://teddymij.github.io/yummy/"
+                target="_blank"
+                aria-describedby="tier-hobby"
+                class="mt-0 block rounded-md px-3.5 p-4 text-center text-base font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-5"
+                >Aller vers le site</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Contactez moi -->
+        <section
+          id="Contactezmoi"
+          class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8"
+        >
+          <div class="mx-auto max-w-2xl lg:max-w-4xl">
+            <figure class="mt-0">
+              <h1
+                class="p-8 text-5xl text-center tracking-tight text-teal-600 sm:text-3xl"
+              >
+                Contactez moi
+              </h1>
+              <blockquote
+                class="text-center text-xl/8 font-semibold text-gray-900 sm:text-xl/9"
+              >
+                <p>
+                  Vous avez un projet en tête ou souhaitez collaborer ? Je
+                  serais ravi d'échanger avec vous ! Que ce soit pour discuter
+                  de vos besoins, obtenir un devis, ou simplement dire bonjour,
+                  je suis à votre écoute.
+                </p>
+              </blockquote>
+              <figcaption class="mt-10">
+                <img
+                  class="mx-auto w-21 h-20 rounded-full"
+                  src="assets/images/profil.png"
+                  alt=""
+                />
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                  <!-- Lien LinkedIn -->
+                  <a
+                    href="#"
+                    class="hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-6 w-6 text-indigo-600"
+                    >
+                      <path
+                        d="M22.225 0H1.771C.792 0 0 .774 0 1.733v20.535C0 23.226.792 24 1.771 24h20.451C23.208 24 24 23.226 24 22.268V1.733C24 .774 23.208 0 22.225 0zM7.119 20.452H3.556V9h3.563v11.452zM5.337 7.44a2.06 2.06 0 01-2.068-2.055c0-1.136.929-2.055 2.068-2.055 1.138 0 2.065.919 2.065 2.055 0 1.136-.927 2.055-2.065 2.055zm14.498 13.012h-3.562v-5.615c0-1.34-.025-3.066-1.867-3.066-1.867 0-2.155 1.46-2.155 2.965v5.716h-3.563V9h3.422v1.561h.048c.477-.904 1.637-1.856 3.368-1.856 3.604 0 4.271 2.373 4.271 5.457v6.29z"
+                      />
+                    </svg>
+                  </a>
+
+                  <!-- Lien GitHub -->
+                  <a
+                    href="#"
+                    class="hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    aria-label="GitHub"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-6 w-6 text-indigo-600"
+                    >
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.612-4.042-1.612-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.776.419-1.304.762-1.604-2.665-.304-5.467-1.333-5.467-5.93 0-1.31.469-2.382 1.236-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.464 11.464 0 016 0c2.292-1.552 3.3-1.23 3.3-1.23.653 1.653.24 2.873.117 3.176.768.838 1.236 1.91 1.236 3.22 0 4.61-2.807 5.624-5.479 5.92.43.372.815 1.102.815 2.222 0 1.606-.014 2.902-.014 3.292 0 .32.216.694.825.577C20.565 22.092 24 17.593 24 12.297c0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+
+                  <!-- Lien Twitter -->
+                  <a
+                    href="#"
+                    class="hover:text-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    aria-label="Twitter"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="h-6 w-6 text-indigo-600"
+                    >
+                      <path
+                        d="M24 4.557a9.816 9.816 0 01-2.828.775 4.94 4.94 0 002.165-2.723 9.862 9.862 0 01-3.127 1.195A4.916 4.916 0 0016.616 3c-2.737 0-4.956 2.218-4.956 4.95 0 .39.045.768.13 1.13-4.116-.206-7.768-2.18-10.21-5.186a4.913 4.913 0 00-.67 2.49c0 1.719.875 3.238 2.2 4.124a4.904 4.904 0 01-2.246-.616v.06c0 2.404 1.71 4.404 3.974 4.854a4.944 4.944 0 01-2.239.086c.63 1.96 2.45 3.384 4.61 3.423a9.869 9.869 0 01-6.1 2.105c-.39 0-.775-.022-1.156-.067a13.93 13.93 0 007.548 2.213c9.056 0 14.01-7.506 14.01-14.008 0-.21-.005-.423-.015-.634A9.956 9.956 0 0024 4.557z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Background creation -->
+        <div
+          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          aria-hidden="true"
+        >
+          <div
+            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            style="
+              clip-path: polygon(
+                74.1% 44.1%,
+                100% 61.6%,
+                97.5% 26.9%,
+                85.5% 0.1%,
+                80.7% 2%,
+                72.5% 32.5%,
+                60.2% 62.4%,
+                52.4% 68.1%,
+                47.5% 58.3%,
+                45.2% 34.5%,
+                27.5% 76.7%,
+                0.1% 64.9%,
+                17.9% 100%,
+                27.6% 76.8%,
+                76.1% 97.7%,
+                74.1% 44.1%
+              );
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="relative justify-center m-auisolate overflow-hidden bg-gray-900 py-24 sm:py-32"
+    >
+      <h2
+        class="text-sm text-center font-semibold tracking-tight text-white sm:text-xl"
+      >
+        @RAZAFINDRAZAHA Mijoro Teddy @Portolio.
+      </h2>
+    </footer>
+
+    <!-- Script to handle dropdown -->
+    <script>
+      // Select the button and the menu
+      const menuButton = document.querySelectorAll("[data-menu-button]");
+      const menu = document.querySelector("[data-menu]");
+
+      // Toggle menu visibility
+      menuButton.forEach((button) => {
+        button.addEventListener("click", () => {
+          const isOpen = menu.classList.contains("hidden");
+          menu.setAttribute("aria-hidden", !isOpen); // Update accessibility attribute
+          menu.classList.toggle("hidden"); // Show/hide the menu
+        });
+      });
+    </script>
+  </body>
+</html>
